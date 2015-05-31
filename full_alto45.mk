@@ -18,11 +18,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device.mk
-$(call inherit-product, device/lenovo/a6000/device.mk)
+$(call inherit-product, device/tcl/alto45/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := a6000
-PRODUCT_NAME := full_a6000
-PRODUCT_BRAND := lenovo
-PRODUCT_MODEL := a6000
-PRODUCT_MANUFACTURER := lenovo
+PRODUCT_DEVICE := alto45
+PRODUCT_NAME := full_alto45
+PRODUCT_BRAND := tcl
+PRODUCT_MODEL := alto45
+PRODUCT_MANUFACTURER := tcl

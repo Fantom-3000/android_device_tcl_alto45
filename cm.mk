@@ -13,22 +13,22 @@
 # limitations under the License.
 
 # Release name
-PRODUCT_RELEASE_NAME := a6000
+PRODUCT_RELEASE_NAME := alto45
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 
-$(call inherit-product, device/lenovo/a6000/full_a6000.mk)
+$(call inherit-product, device/tcl/alto45/full_alto45.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := a6000
-PRODUCT_NAME := cm_a6000
-PRODUCT_BRAND := lenovo
-PRODUCT_MODEL := a6000
-PRODUCT_MANUFACTURER := lenovo
+PRODUCT_DEVICE := alto45
+PRODUCT_NAME := cm_alto45
+PRODUCT_BRAND := tcl
+PRODUCT_MODEL := alto45
+PRODUCT_MANUFACTURER := tcl
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0

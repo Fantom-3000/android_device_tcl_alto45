@@ -14,11 +14,11 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/lenovo/a6000
+LOCAL_PATH := device/tcl/alto45
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product-if-exists, vendor/lenovo/a6000/a6000-vendor.mk)
+$(call inherit-product-if-exists, vendor/tcl/alto45/alto45-vendor.mk)
 
 # Ramdisk
  PRODUCT_COPY_FILES += \
@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg
 
-# lenovo
+# tcl
 PRODUCT_PACKAGES += \
     charge_only_mode
 
