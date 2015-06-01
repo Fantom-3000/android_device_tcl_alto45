@@ -18,6 +18,8 @@ LOCAL_PATH := device/tcl/alto45
 
 -include vendor/tcl/alto45/BoardConfigVendor.mk
 
+TARGET_SPECIFIC_HEADER_PATH := device/tcl/alto45/include
+
 TARGET_BOARD_PLATFORM := msm8916
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
 
@@ -101,8 +103,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
 # Lights
-
-# Liblight
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Media
@@ -145,6 +145,9 @@ BOARD_USES_QC_TIME_SERVICES := true
 ifneq ($(QCPATH),)
 BOARD_USES_QCNE := true
 endif
+
+# Fonts
+SMALLER_FONT_FOOTPRINT := true
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file

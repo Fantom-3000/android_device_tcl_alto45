@@ -16,8 +16,10 @@
 PRODUCT_RELEASE_NAME := alto45
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 854
+
+DEVICE_PACKAGE_OVERLAYS += device/tcl/alto45/overlay
 
 $(call inherit-product, device/tcl/alto45/full_alto45.mk)
 
