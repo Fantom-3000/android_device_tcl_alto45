@@ -30,6 +30,7 @@ LINEEND=" \\"
 COUNT=`wc -l proprietary-files.txt | awk {'print $1'}`
 DISM=`egrep -c '(^#|^$)' proprietary-files.txt`
 COUNT=`expr $COUNT - $DISM`
+mkdir ../../../$OUTDIR/proprietary
 for FILE in `egrep -v '(^#|^$)' proprietary-files.txt`; do
   COUNT=`expr $COUNT - 1`
   if [ $COUNT = "0" ]; then
@@ -43,6 +44,7 @@ for FILE in `egrep -v '(^#|^$)' proprietary-files.txt`; do
     if [ -n "$DEST" ]; then
       FILE=$DEST
     fi
+    adb pull /system/$FILE ../../../$OUTDIR/proprietary/
     echo "    $OUTDIR/proprietary/$FILE:system/$FILE$LINEEND" >> $MAKEFILE
   fi
 done
