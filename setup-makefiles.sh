@@ -131,7 +131,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifeq (\$(TARGET_DEVICE),hm2014811)
+ifeq (\$(TARGET_DEVICE),alto45)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.location
