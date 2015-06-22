@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,5 +32,3 @@ PRODUCT_NAME := cm_alto45
 PRODUCT_BRAND := tcl
 PRODUCT_MODEL := alto45
 PRODUCT_MANUFACTURER := tcl
-
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
